@@ -1,0 +1,33 @@
+.MuiAppBar-colorPrimary {
+    color:#0E0E0E!important;
+    /* box-shadow: none!important; */
+    background-color: none!important;
+    margin-top: 40px;
+}
+/* Typography{
+    padding: 10px
+} */
+.MuiTypography-h6{
+    padding: 10px!important;
+    padding-left: 30px!important;
+    background: white!important;
+    box-shadow: none!important;
+}
+.form-field{
+    background: #F4F7FC;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 50px;
+}
+#eventName, #eventDescription{
+    width: 300px;
+}
+#form-field{
+    display: none;
+}
+#list{
+    margin-top: 50px;
+}
+    
+

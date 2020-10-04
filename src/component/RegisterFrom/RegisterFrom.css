@@ -1,0 +1,21 @@
+.form-container{
+    border: 2px solid #18A0FB;
+    width: 500px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 30px;
+}
+#name, #email, #title, #description, #date{
+    width:460px;
+    height: 30px;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid lightGrey;
+    margin:20px 0;
+}
+.registerBtn{
+    width:450px;
+    background-color:#3F90FC;
+    height: 50px;
+    color: #fff;
+}

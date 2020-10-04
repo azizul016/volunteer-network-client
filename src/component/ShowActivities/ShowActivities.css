@@ -1,0 +1,18 @@
+.activities{
+    border: 1px solid #18A0FB;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right:10px;
+    border-radius: 10px;
+}
+.container{
+    width: 50%;
+    position: relative;
+}
+.success{
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+
+}

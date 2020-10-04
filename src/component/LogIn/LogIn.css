@@ -1,0 +1,31 @@
+.logIn{
+    Width :570px;
+    height :457px;
+    margin: 100px auto;
+    border: 1px solid #C2C2C2;
+}
+.logIn:hover{
+    border: 3px solid #1FA2FA;
+}
+.button{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightGrey!important;
+    height: 46px;
+    border-radius: 50px;
+    width: 350px;
+    margin: 180px auto;
+}
+.googleButton{
+    border: none;
+    outline: none!important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    background: none!important;
+  
+}
+.googleButton:hover{
+    outline: none!important;
+}
