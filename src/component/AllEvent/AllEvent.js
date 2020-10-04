@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const AllEvent = () => {
     const [event, setEvent] = useState([])
     useEffect(() => {
-        fetch('http://localhost:4000/activity')
+        fetch('https://morning-river-04073.herokuapp.com/activity')
             .then(res => res.json())
             .then(data => {
                 setEvent(data)
@@ -12,7 +12,7 @@ const AllEvent = () => {
     }, [])
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://morning-river-04073.herokuapp.com/delete/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

@@ -7,13 +7,14 @@ import 'date-fns';
 import addIcons from '../resources/logos/plus 1.png';
 import volunteerIcon from '../resources/logos/users-alt 1.png';
 import logo from '../resources/logos/Group 1329.png';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { AppBar, Container, Typography } from '@material-ui/core';
 import './AddUser.css'
 import AllEvent from '../AllEvent/AllEvent';
 
 const AddUser = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
+    const history = useHistory();
 
     const handleDateChange = (date) => {
         setSelectedDate(date);
@@ -24,7 +25,7 @@ const AddUser = () => {
         const title = document.getElementById("eventName").value;
         const description = document.getElementById("eventDescription").value;
         const allUser = { title, description, selectedDate }
-        fetch('http://localhost:4000/addVolunteer', {
+        fetch('https://morning-river-04073.herokuapp.com/addVolunteer', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -34,6 +35,7 @@ const AddUser = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result);
+                history.push('/')
             })
     }
 

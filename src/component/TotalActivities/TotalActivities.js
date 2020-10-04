@@ -8,13 +8,13 @@ const TotalActivities = () => {
     const [activities, setActivities] = useState([])
     console.log(activities);
     useEffect(() => {
-        fetch("http://localhost:4000/activities?email=" + loggedInUser.email)
+        fetch("https://morning-river-04073.herokuapp.com/activities?email=" + loggedInUser.email)
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://morning-river-04073.herokuapp.com/delete/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

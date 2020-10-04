@@ -20,7 +20,7 @@ const RegisterFrom = () => {
         const description = document.getElementById("description").value;
         const title = document.getElementById("title").value;
         const total = { name, email, date, description, title, image }
-        fetch('http://localhost:4000/addActivities', {
+        fetch('https://morning-river-04073.herokuapp.com/addActivities', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(total)

@@ -8,7 +8,7 @@ const Volunteer = () => {
     const { volunteer, setVolunteer } = useContext(UserContext)
 
     useEffect(() => {
-        fetch('http://localhost:4000/volunteer')
+        fetch('https://morning-river-04073.herokuapp.com/volunteer')
             .then(res => res.json())
             .then(data => setVolunteer(data))
     }, [])
