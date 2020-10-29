@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/67515560/97528578-49fed580-19d8-11eb-8d77-55667c7d6355.png "Volunteer-Network")
 
 # Volunteer-Network an Volunteer services web app
 
