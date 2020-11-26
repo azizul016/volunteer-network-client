@@ -5,7 +5,7 @@
     margin:0 10px
 }
 .MuiButton-containedPrimary{
-    margin: 5px 20px!important;
+    /* margin: 5px 20px!important; */
     padding: 9px !important;
     background-color: #3F90FC!important;
     color: #FFFFFF;
