@@ -11,7 +11,7 @@ const Volunteer = () => {
   const [search, setSearch] = useState("");
   const [searchBtn, setSearchBtn] = useState("");
   useEffect(() => {
-    fetch("https://morning-river-04073.herokuapp.com/volunteer")
+    fetch("https://volunteer-network-web.herokuapp.com/volunteer")
       .then((res) => res.json())
       .then((data) => setVolunteer(data));
   }, []);
@@ -35,25 +35,25 @@ const Volunteer = () => {
   //   }
   return (
     <>
-      <div className="banner-bg">
+      <div className='banner-bg'>
         <Header></Header>
-        <h2 className="text-center">I GROW BY HELPING PEOPLE IN NEED.</h2>
+        <h2 className='text-center'>I GROW BY HELPING PEOPLE IN NEED.</h2>
 
-        <div className="from-style">
-          <Form className="d-flex">
+        <div className='from-style'>
+          <Form className='d-flex'>
             <FormControl
               onChange={(e) => setSearch(e.target.value)}
-              type="text"
-              placeholder="Search"
-              className="form-control"
+              type='text'
+              placeholder='Search'
+              className='form-control'
             />
-            <div className="ml-2">
+            <div className='ml-2'>
               {" "}
               <Button
                 onClick={handleClick}
-                type="submit"
-                variant="contained"
-                className="btn btn-primary"
+                type='submit'
+                variant='contained'
+                className='btn btn-primary'
               >
                 {" "}
                 Submit
@@ -61,8 +61,8 @@ const Volunteer = () => {
             </div>
           </Form>
         </div>
-        <div className="container mt-5">
-          <div className="row">
+        <div className='container mt-5'>
+          <div className='row'>
             {volunteer
               .filter((vol) => vol.title.toLowerCase().includes(search.trim()))
               .map((volunteer) => (
